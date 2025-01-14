@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<div class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+        <h1 class="display-3 fw-bold">Welcome to The Book Wheel</h1>
+        <p class="lead">Discover, Write, and Share Stories with the World</p>
+        <a href="{% url 'signUp' %}" class="btn btn-primary btn-lg mx-2">Get Started</a>
+        <a href="{% url 'dashboard' %}" class="btn btn-outline-light btn-lg mx-2">Your Dashboard</a>
+    </div>
+</div>
+
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose The Book Wheel?</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="fas fa-book fa-3x mb-3"></i>
+                    <h5>Wide Variety of Stories</h5>
+                    <p>Explore short stories, novels, and top-rated content from authors worldwide.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="fas fa-pen-nib fa-3x mb-3"></i>
+                    <h5>Write & Publish</h5>
+                    <p>Create and share your stories effortlessly on a user-friendly platform.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="fas fa-star fa-3x mb-3"></i>
+                    <h5>Get Recognized</h5>
+                    <p>Gain ratings and reviews, and become a top-rated author.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="mb-3">Join a Growing Community of Writers</h2>
+        <p class="lead">Start your journey today and share your creativity with the world.</p>
+        <a href="{% url 'signUp' %}" class="btn btn-light btn-lg">Sign Up Now</a>
+    </div>
+</section>
+{% endblock %}

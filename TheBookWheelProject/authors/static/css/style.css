@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), 
+      url('https://source.unsplash.com/1600x900/?books') no-repeat center center/cover;
+    color: white;
+}
+
+/* Features Section */
+.features .icon-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+}
+
+.features .icon-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.features .icon-box i {
+    color: #007bff;
+}
+
+/* CTA Section */
+.cta {
+    background: #007bff;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.cta .btn-light {
+    background: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2em;
+}
+
+.cta .btn-light:hover {
+    background: #f8f9fa;
+    color: #0056b3;
+}

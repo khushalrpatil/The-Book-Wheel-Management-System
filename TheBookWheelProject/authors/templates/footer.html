@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Section</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+</head>
+<body>
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Download App Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-3" style="border-bottom: 2px solid #f15a24;">Download App</h5>
+          <a href="#">
+            <img src="{% static 'images/google-play.png' %}" alt="Google Play" class="img-fluid mb-2" style="max-width: 160px;">
+          </a>
+          <a href="#">
+            <img src="{% static 'images/app-store.png' %}" alt="App Store" class="img-fluid" style="max-width: 190px;">
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-3" style="border-bottom: 2px solid #f15a24;">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Writing</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Reading</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Copyright</a></li>
+            <li><a href="#" class="text-light text-decoration-none">General</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-3" style="border-bottom: 2px solid #f15a24;">Contact Us</h5>
+          <address class="small">
+            <strong>Email:</strong> <a href="mailto:support@pratilipi.com" class="text-light text-decoration-none">support@Thebookwheel.com</a><br>
+            <strong>Address:</strong><br>
+            Cravita Technologies Private Limited,<br>
+            Abhinav Apartment, 3rd Floor,<br>
+            near Pune Municipal Corporation,Shivajinagar,<br>
+            Pune, Maharashtra 411005, India.
+          </address>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase mb-3" style="border-bottom: 2px solid #f15a24;">Follow Us</h5>
+          <div>
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="bg-secondary text-center py-3">
+        <p class="mb-0 text-light">
+          © 2025 Cravita Tech. Pvt. Ltd. |
+          <a href="#" class="text-light text-decoration-none">About Us</a> |
+          <a href="#" class="text-light text-decoration-none">Work With Us</a> |
+          <a href="#" class="text-light text-decoration-none">Privacy Policy</a> |
+          <a href="#" class="text-light text-decoration-none">Terms</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'js/footer.js' %}"></script>
+</body>
+</html>

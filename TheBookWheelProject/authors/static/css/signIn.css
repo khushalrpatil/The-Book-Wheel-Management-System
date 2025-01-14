@@ -1,0 +1,58 @@
+/* sign.css */
+
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Card Styling */
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #f15a24;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+.form-control:focus {
+    border-color: #f15a24;
+    outline: none;
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #f15a24;
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e14a1f;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+}

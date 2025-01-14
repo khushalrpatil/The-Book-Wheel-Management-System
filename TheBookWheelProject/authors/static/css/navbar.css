@@ -1,0 +1,83 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #FFFFFF !important; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.navbar-brand .logo {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    margin-right: 10px; /* Space between logo and text */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50%; /* Rounded logo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for logo */
+}
+
+.navbar-brand .logo:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    box-shadow: 0 4px 8px rgba(241, 90, 36, 0.5); /* Orange shadow */
+}
+
+/* Navbar Brand */
+.navbar-brand h1 {
+    color: #000000; /* Black for the brand name */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand h1:hover {
+    color: #f15a24; /* Orange hover effect */
+}
+
+.navbar-brand .tagline {
+    color: #000000; /* Black for the tagline */
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    color: #f15a24 !important; /* Orange for active link */
+    font-weight: bold;
+    border-bottom: 2px solid #f15a24; /* Underline for active link */
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    color: #000000 !important; /* Black text for links */
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f15a24 !important; /* Orange on hover */
+    text-decoration: underline;
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+    border-color: #f15a24 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #f15a24 !important;
+}
+
+/* Adjust Navbar on Smaller Screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .navbar-brand h1 {
+        font-size: 1.2rem;
+    }
+    .navbar-brand .tagline {
+        font-size: 0.75rem;
+    }
+}
